@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanguy et Laura</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="timeline.js"></script>
+    <script defer src="carousel-p.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    
+</head>
+<body>
+  <section id="acceuil">
+    <div>
+      <h1>L & T</h1>
+      <p class="t-divider">18.06.2022</p>
+      <h2>Laura & Tanguy</h2>
+      <p class="t-divider">Notre Mariage</p>
+    </div>
+    <nav>
+        <ul id="nav-menu" style="display: none;">
+            <li><a href="#accueil">Acceuil</a></li>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#story">Histoire</a></li>
+            <li><a href="#temoin">Témoins</a></li>
+            <li><a href="#mariage">18/06</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#partenaires">Partenaires</a></li>
+        </ul>
+        <div id="nav-toggle" style="display: none;">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </div>
+    </nav>
+  </section>
+  <section id="intro">
+      <div>
+          <h3>À tous les invités</h3>
+          <p>Merci à tous d’avoir répondu à l’appel de ce 18 juin</p>
+          <p>La France a perdu un NOM ! Mais la France n’a pas perdu l’Amour</p>
+          <p>Vive les Mariés</p>
+          <p>Général GAUTHIER</p>
+      </div>
+      <div class="divider"></div>
+      <div>
+          <h4>18 Juin</h4>
+          <p>Nous sommes le 170e jour de l’année , nous fêtons la saint Léonce</p>
+          <p>Ce jour est célèbre avec l'appel du 18 Juin 1940 prononcé par le général de Gaulle.</p>
+      </div>
+      <div class="divider"></div>
+      <div>
+          <h4>Météo</h4>
+          <p>Le Soleil se lève comme la veille à 5H48 et se couche encore comme hier à 21H55</p>
+          <p>Nous espérons vraiment qu’il fera beau !</p>
+      </div>
+      <div class="divider"></div>
+      <div>
+          <h4>Dicton du jour</h4>
+          <p>«Mauvais temps à la saint Léonce, peu de fruits beaucoup de ronces»</p>
+      </div>  
+  </section>
+  <section id="story" class="timeline"> <!--https://www.sliderrevolution.com/resources/css-timeline/-->
+      <ol>
+          <li>
+            <div>
+              <time datetime="1996-11-27">27/11/1996</time> Naissance de Tanguy
+            </div>
+          </li>
+          <li>
+            <div>
+              <time datetime="1998-09-10">10/09/1998</time> Naissance de Laura
+            </div>
+          </li>
+          <li>
+            <div>
+              <time datetime="2014-09">09/2014</time> Première rencontre lors de la rentrée
+            </div>
+          </li>
+          <li>
+            <div>
+              <time datetime="2015-01-19">19/01/2015</time> Le coup de foudre
+            </div>
+          </li>
+          <li>
+            <div>
+              <time datetime="2016">2016</time> Aménagement ensemble mais pas seul <span>Début de la colocation avec Bastien (témoin) et Clément</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time datetime="2018">2018</time> Aménagement enfin seul à Entrammes<span>Salut la coloc !</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time datetime="2019-10-19">19/10/2019</time> Premier engagement : Le PACS <span>Désolé on ne l’a pas arrosé mais on se rattrape aujourd’hui</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time datetime="2019-12">12/2019</time> Achat immobilier locatif en Décembre <span>La raison du PACS !</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time datetime="2020-12-25">25/12/2020</time> Il a fait sa demande et elle a dit OUI !
+            </div>
+          </li>
+          <li>
+            <div>
+              <time datetime="2022-06-18">18/06/2022</time> LE GRAND JOUR 
+            </div>
+          </li>
+          <li>
+            <div>
+              <time datetime="2023">2023</time> Notre installation
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>...</time> Le reste est à écrire ...
+            </div>
+          </li>
+          <li></li>
+        </ol>
+        <div class="arrows">
+          <button class="arrow arrow__prev disabled" disabled>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
+          </button>
+          <button class="arrow arrow__next">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
+          </button>
+        </div>
+  </section>
+  <section id="temoin">
+    <div>
+      <h4>Témoins du Marié</h4>
+      <div class="temoin" id="Amelia">
+        <img src="/img/Christopher-GAUTHIER.jpg" alt="">
+        <div class="card">
+          <p><span class="bold">Prénom :</span> Amélia</p>
+          <p><span class="bold">Nom :</span> GAUTHIER</p>
+          <p><span class="bold">Surnom :</span> La petite</p>
+          <p><span class="bold">Âge :</span> 22ans, le 22 Juin <span>Espérons qu'elle paye sa bouteille !</span></p>
+          <p><span class="bold">Signes particuliers :</span> Soeur du Marié et pipelette, énormément pipelette ...</p>
+          <p><span class="bold">Profession :</span> Opticienne</p>
+          <p><span class="bold">Numéro de carte bancaire :</span> 5131 1806 2206 2000</p>
+        </div>
+      </div>
+      <div class="temoin" id="Bastien">
+        <img src="/img/Christopher-GAUTHIER.jpg" alt="">
+        <div class="card">
+          <p><span class="bold">Prénom :</span> Bastien</p>
+          <p><span class="bold">Nom :</span> LENOIR</p>
+          <p><span class="bold">Surnom :</span> Biquette</p>
+          <p><span class="bold">Âge :</span> 24ans</p>
+          <p><span class="bold">Signes particuliers :</span> Ami du Marié depuis le Bac et ancien colocataire</p>
+          <p><span class="bold">Profession :</span> Salarié Agricole</p>
+          <p><span class="bold">Anecdote de la photo :</span> Bastien dans son jeune temps à la recherche de virilité</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>Témoins de la Mariée</h4>
+      <div class="temoin" id="Sylvain">
+        <img src="/img/Christopher-GAUTHIER.jpg" alt="">
+        <div class="card">
+          <p><span class="bold">Prénom :</span> Sylvain</p>
+          <p><span class="bold">Nom :</span> PIQUET</p>
+          <p><span class="bold">Surnom :</span> Maurice</p>
+          <p><span class="bold">Âge :</span> 21ans</p>
+          <p><span class="bold">Signes particuliers :</span> Frère de la Mariée et 'suite a demander'</p>
+          <p><span class="bold">Profession :</span> Agriculteur fraîchement installé : Mai 2022</p>
+          <p><span class="bold">Passion :</span> Chasse au Tarin</p>
+        </div>
+      </div>
+      <div class="temoin" id="Sofie">
+        <img src="/img/Christopher-GAUTHIER.jpg" alt="">
+        <div class="card">
+          <p><span class="bold">Prénom :</span> Sofie <span>(Avec un F pour être originale)</span></p>
+          <p><span class="bold">Nom :</span> DEPRAETER</p>
+          <p><span class="bold">Surnom :</span> ""</p>
+          <p><span class="bold">Âge :</span> 23ans</p>
+          <p><span class="bold">Signes particuliers :</span> </p>
+          <p><span class="bold">Profession :</span> Salarié Agricole</p>
+          <p><span class="bold">Passion :</span> Pompier volontaire</p>
+          <p><span class="bold">Anecdote de la photo :</span> ""</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>Le meilleur pour la fin</h4>
+      <div class="temoin" id="Christopher">
+        <img src="/img/Christopher-GAUTHIER.jpg" alt="">
+        <div class="card">
+          <p><span class="bold">Prénom :</span> Christopher</p>
+          <p><span class="bold">Nom :</span> GAUTHIER</p>
+          <p><span class="bold">Surnom :</span> Kekoeur</p>
+          <p><span class="bold">Âge :</span> 24ans</p>
+          <p><span class="bold">Signes particuliers :</span> Frère du Marié et le seul qui ressemble au Père, je dit ça je dit rien...</p>
+          <p><span class="bold">Profession :</span> Développeur Fullstack</p>
+          <p><span class="bold">Passion :</span> Faire chier son frère et sa soeur</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="mariage">
+    <div>
+      <h4>Céremonie</h4>
+      <p>La cérémonie de mariage débutera à 11h à l’église de Daon .</p>
+      <p>Un parking sera ouvert en contrebas de celle-ci.</p>
+      <div>
+        <h5>Direction</h5>
+        <p>Le moyen le plus simple d’entrer dans le parking est de prendre la D213 et ensuite prendre la rue du Tourniquet. Un portail à votre droite sera ouvert sur le parking en herbe.</p>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div>
+      <h4>Photos de groupe</h4>
+      <p>La cérémonie terminée nous enchaînerons sur la séance photo qui se déroulera sur le parc de la mairie de Daon. Nous vous demandons de suivre au mieux les directives de la photographe pour un bon déroulement. Des personnes désignées aiderons la photographe,merci de les écouter.</p>
+      <p><span>Une séance photo rapide permettra un cocktail plus long</span></p>
+    </div>
+    <div class="divider"></div>
+    <div>
+      <h4>Réception</h4>
+      <p>L’heure du cocktail peut enfin arriver, pour cela nous prendrons direction de la salle Espace Jacques Brel à Saint Fort</p>
+    </div>
+    <div class="divider"></div>
+    <div>
+      <h4>Repas</h4>
+      <p>Ces amuses bouches nous ont mis en appétit !</p>
+      <h5>Passons à table !</h5>
+    </div>
+    <div class="divider"></div>
+    <div>
+      <h4>Détente</h4>
+      <p>La peau du ventre bien tendue nous pouvons nous dégourdir les jambes, c’est le moment de détente de la journée.</p>
+      <p>Pensez à prendre vos jeux de boules, palets, moulky …</p>
+    </div>
+    <div class="divider"></div>
+    <div>
+      <h4>Soirée dansante</h4>
+      <p>Il est déjà 20h, les invités du soir nous rejoignent pour la soirée dansante, plus on est de fous et plus on rit !. Un petit cocktail de bienvenue sera proposé à tous les invités.</p>
+      <p>Soyez prêt à aller jusqu’au bout de la nuit et enflammer le dancefloor</p>
+    </div>
+  </section>
+  <section id="gallery">
+    <div>
+      <h3>Galerie Photo</h3>
+      <p>Ajouter vos photos et vos vidéos pour les partager avec tous le monde !</p>
+      <p>Retrouver toutes les photos et videos de ce grand jour <a href="/gallery.php">ici</a></p>
+    </div>
+  </section>
+  <section id="partenaires">
+    <h3>Nos partenaires</h3>
+    <p>Nous remercions l’ensemble de nos partenaires, nous les conseillons vivement, n’hésitez pas à les faire travailler.</p>
+    <div class="container">
+      <div class="carousel">
+            <div class="nav nav-left">
+              <div class="ion-chevron-left carousel-arrow-icon-left"></div>
+            </div>
+      
+            <div class="carousel-content">
+              
+              <div class="slide slide-1">
+                <img src="/img/emc.png" alt="">
+                <div>
+                  <h4>Costumes et Robes</h4>
+                  <p>EMC Mariage</p>
+                  <p>Chemillé</p>
+                </div>
+              </div>
+              <div class="slide slide-2">
+                <img src="/img/bulles.png" alt="">
+                <div>
+                  <h4>Fleuritses</h4>
+                  <p>Bulle d'oxygène</p>
+                  <p>Cossé-le-Vivien</p>
+                </div>
+              </div>
+              <div class="slide slide-3">
+                <img src="/img/cristal.png" alt="">
+                <div>
+                  <h4>Orchestre</h4>
+                  <p>Cristal</p>
+                  <p><a href="https://www.orchestre-cristal.fr/" target="_blank" rel="noopener noreferrer">Site internet</a></p>
+                </div>
+              </div>
+              <div class="slide slide-4">
+                <img src="/img/laure-santier.png" alt="">
+                <div>
+                  <h4>Photographe</h4>
+                  <p>Laure Santier</p>
+                  <p><a href="https://www.lauriesantierphotographie.com" target="_blank" rel="noopener noreferrer">Site internet</a></p>
+                </div>
+              </div>
+              <div class="slide slide-5">
+                <img src="/img/tradition-bouchere.png" alt="">
+                <div>
+                  <h4>Traiteur</h4>
+                  <p>Tradition Bouchère</p>
+                  <p>Sablé-sur-Sarthe</p>
+                </div>
+              </div>
+              <div class="slide slide-6">
+                <img src="/img/vandB.png" alt="">
+                <div>
+                  <h4>Vins et Bières</h4>
+                  <p>VandB Segré</p>
+                  <p>Segré</p>
+                </div>
+              </div>
+              <div class="slide slide-7">
+                <img src="/img/alv.jpg" alt="">
+                <div>
+                  <h4>Vaisselle</h4>
+                  <p>Arnaud Location Vaisselle</p>
+                  <p>Château-Gontier</p>
+                </div>
+              </div>
+              <div class="slide slide-8">
+                <img src="/img/selfevent.png" alt="">
+                <div>
+                  <h4>Photobooth</h4>
+                  <p>Self'Event</p>
+                  <p><a href="https://selfevent.fr/" target="_blank" rel="noopener noreferrer">Site internet</a></p>
+                </div>
+              </div>
+              <div class="slide slide-9">
+                <img src="/img/aziliz.jpeg" alt="">
+                <div>
+                  <h4>Barnum</h4>
+                  <p>Atelier d'Aziliz</p>
+                  <p>Argentré</p>
+                </div>
+              </div>
+              <div class="slide slide-10">
+                <img src="/img/t&l2.jpg" alt="">
+                <div>
+                  <h4>Décoration</h4>
+                  <p>Laura et Tanguy</p>
+                  <p>Entrammes</p>
+                </div>
+              </div>
+              <div class="slide slide-11">
+                <img src="/img/Christopher-GAUTHIER.jpg" alt="">
+                <div>
+                  <h4>Banques</h4>
+                  <p>M et Mme GAUTHIER et M et Mme PIQUET</p>
+                  <p>Bel-Air de Combrée et Daon</p>
+                </div>
+              </div>
+              <div class="slide slide-1">
+                <img src="/img/Christopher-GAUTHIER.jpg" alt="">
+                <div>
+                  <h4>Développeur Web</h4>
+                  <p>Christopher GAUTHIER</p>
+                  <p><a href="https://christopher-gauthier.com/" target="_blank" rel="noopener noreferrer"></a></p>
+                </div>
+              </div>
+            
+            </div>
+
+            <div class="nav nav-right">
+              <div class="ion-chevron-right carousel-arrow-icon-right"></div>
+            </div>
+          </div>
+          
+      </div>
+  </section>
+</body>
+</html>
