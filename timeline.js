@@ -52,6 +52,8 @@
   
     // SET STATE OF PREV/NEXT ARROWS
     function setBtnState(el, flag = true) {
+      console.log(el);
+      console.log(flag);
       if (flag) {
         el.classList.add(disabledClass);
       } else {
