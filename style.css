@@ -495,6 +495,7 @@ section{
     height: calc(100vh - 48px);
     background: url(/img/acceuil-m.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     padding: 10vh 10vw;
@@ -761,6 +762,9 @@ right: 3px;
 }
 /* T�moin */
 
+#temoin{
+  padding: 5rem 10vw;
+}
 #temoin h3{
     text-align: center;
     padding: 3rem;
@@ -775,7 +779,7 @@ right: 3px;
     flex-direction: row-reverse;
 }
 .temoin img{
-    width: 30vw;
+    width: 25vw;
     border-radius: 50%;
     border: 5px solid var(--harvest-1);
 }
@@ -784,7 +788,7 @@ right: 3px;
 }
 .temoin .card{
     height: 100%;
-    width: 50vw;
+    width: 40vw;
     border: 1px solid black;
     padding: 3%;
 }
@@ -798,6 +802,7 @@ right: 3px;
     background-image: url(/img/t&L.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     display: flex;
     align-items: center;
