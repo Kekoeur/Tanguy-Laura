@@ -3,6 +3,8 @@
   --harvest-2 : #ED7458;
   --harvest-3 : #FFDC9F;
   --harvest-4 : #DDC9BC;
+  --harvest-5: #58ed74;
+  --harvest-5-o: #58ed7450;
   --harvest-2-o : #ed735850;
   --harvest-3-o : #ffdc9f50;
 }
@@ -173,25 +175,25 @@ button {
 }
 h2{
   font-size: 6rem;
-  color: var(--harvest-2);
+  color: var(--harvest-5);
   /*font-family: 'Seasons_bold_italic';*/
   font-family: 'Joseph_Sophia';
 }
 h3 {
   font-size: 4rem;
-  color: var(--harvest-2);
+  color: var(--harvest-5);
   /*font-family: 'Seasons_bold_italic';*/
   font-family: 'Joseph_Sophia';
 }
 h4 {
   font-size: 3rem;
-  color: var(--harvest-2);
+  color: var(--harvest-5);
   /*font-family: 'Seasons_bold_italic';*/
   font-family: 'Joseph_Sophia';
 }
 h5 {
   font-size: 2rem;
-  color: var(--harvest-2);
+  color: var(--harvest-5);
   /*font-family: 'Seasons_bold_italic';*/
   font-family: 'Joseph_Sophia';
 }
