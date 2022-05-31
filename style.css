@@ -189,6 +189,12 @@ h4 {
   /*font-family: 'Seasons_bold_italic';*/
   font-family: 'Joseph_Sophia';
 }
+h5 {
+  font-size: 2rem;
+  color: var(--harvest-2);
+  /*font-family: 'Seasons_bold_italic';*/
+  font-family: 'Joseph_Sophia';
+}
 body {
   font-size: 20px;
   font-family: 'Mirage',sans-serif;
@@ -269,6 +275,10 @@ body {
 }
 
 .timeline ol li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: calc(100% + 7px);
   width: 280px;
@@ -669,6 +679,9 @@ span.icon-bar {
     align-items: center;
     padding: 5rem;
 }
+#mariage{
+  padding-bottom: 0;
+}
 #french {
   padding: 30px;
   max-width: 50vw;
@@ -852,4 +865,65 @@ right: 3px;
 
 #modal{
     display: none;
+}
+#small-soiree{
+  display: none;
+  background-image: url(/img/small-party2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow:hidden;
+  height: 39vw;
+}
+#soiree{
+  background-image: url(/img/party.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow:hidden;
+  height: 17vw;
+  color: var(--harvest-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 3vw;
+}
+@media screen and (max-width:1000px) {
+  #soiree{
+    background-image: url(/img/small-party.png);
+    height: 39vw;
+  }
+}
+@media screen and (max-width:1000px) {
+  #small-soiree{
+    display: block;
+  }
+  #soiree{
+    background-color: #000;
+    height: auto;
+    padding: 2rem 5rem;
+  }
+}
+
+.logo{
+  height: 100px;
+}
+
+#info-gps{
+  display: none;
+}
+#info-gps.active{
+  display: block;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 5rem;
+}
+#info-gps > div{
+  background-color: #8E7C68;
+}
+.photo-timeline{
+  max-width: 250px;
+  max-height: 150px;
 }

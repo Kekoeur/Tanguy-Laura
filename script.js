@@ -24,3 +24,8 @@ function StickyNav() {
     navbar.classList.remove("sticky");
   }
 }
+
+document.getElementById('display-info').addEventListener('click', function (e) {
+  e.preventDefault();
+  document.getElementById('info-gps').classList.toggle("active");
+})
