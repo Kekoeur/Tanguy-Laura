@@ -992,7 +992,7 @@ right: 3px;
 }
 .photo-timeline{
   max-width: 250px;
-  max-height: 150px;
+  max-height: 125px;
 }
 @media screen and (max-width:767px) {
   #info-gps.active, #salle.active, #eglise.active{
