@@ -1,4 +1,18 @@
 :root {
+  --color-1: #F6E7D5;
+  --color-1-o: #F6E7D550;
+  --color-2: #B1A285;
+  --color-2-o: #B1A28550;
+  --color-3: #6C755F;
+  --color-3-o: #6C755F50;
+  --color-4: #4C533E;
+  --color-4-o: #4C533E50;
+  --color-5: #C2835E;
+  --color-5-o: #C2835E50;
+  --color-6: #733F22;
+  --color-6-o: #733F2250;
+
+
   --harvest-1 : #8E7C68;
   --harvest-2 : #ED7458;
   --harvest-3 : #FFDC9F;
@@ -175,25 +189,25 @@ button {
 }
 h2{
   font-size: 6rem;
-  color: var(--harvest-5);
+  color: var(--color-4);
   /*font-family: 'Seasons_bold_italic';*/
   font-family: 'Joseph_Sophia';
 }
 h3 {
   font-size: 4rem;
-  color: var(--harvest-5);
+  color: var(--color-4);
   /*font-family: 'Seasons_bold_italic';*/
   font-family: 'Joseph_Sophia';
 }
 h4 {
   font-size: 3rem;
-  color: var(--harvest-5);
+  color: var(--color-3);
   /*font-family: 'Seasons_bold_italic';*/
   font-family: 'Joseph_Sophia';
 }
 h5 {
   font-size: 2rem;
-  color: var(--harvest-5);
+  color: var(--color-3);
   /*font-family: 'Seasons_bold_italic';*/
   font-family: 'Joseph_Sophia';
 }
@@ -252,7 +266,7 @@ body {
   list-style-type: none;
   width: 160px;
   height: 3px;
-  background: var(--harvest-4);
+  background: var(--color-6);
 }
 
 .timeline ol li:last-child {
@@ -273,7 +287,7 @@ body {
   height: 12px;
   transform: translateY(-50%);
   border-radius: 50%;
-  background-color: var(--harvest-2);
+  background-color: var(--color-5);
 }
 
 .timeline ol li div {
@@ -288,7 +302,7 @@ body {
   font-size: 1rem;
   white-space: normal;
   color: black;
-  background: var(--harvest-4);
+  background: var(--color-2);
 }
 
 .timeline ol li div::before {
@@ -309,7 +323,7 @@ body {
 .timeline ol li:nth-child(odd) div::before {
   top: 100%;
   border-width: 8px 8px 0 0;
-  border-color: var(--harvest-4) transparent transparent transparent;
+  border-color: var(--color-2) transparent transparent transparent;
 }
 
 .timeline ol li:nth-child(even) div {
@@ -319,7 +333,7 @@ body {
 .timeline ol li:nth-child(even) div::before {
   top: -8px;
   border-width: 8px 0 0 8px;
-  border-color: transparent transparent transparent var(--harvest-4);
+  border-color: transparent transparent transparent var(--color-2);
 }
 
 .timeline time {
@@ -523,7 +537,7 @@ section{
   width: 100%;
   height: calc(100vh - 48px);
   z-index: 0;
-  background-color: var(--harvest-2-o);
+  background-color: var(--color-5-o);
 }
 #acceuil {
     text-align: center;
@@ -683,6 +697,7 @@ span.icon-bar {
 }
 #mariage{
   padding-bottom: 0;
+  overflow-x: hidden;
 }
 #french {
   padding: 30px;
@@ -756,7 +771,6 @@ right: 3px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background-color: var(--harvest-3);*/
     background: url(/img/ble.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -770,7 +784,7 @@ right: 3px;
   width: 100%;
   height: 100%;
   z-index: 0;
-  background-color: var(--harvest-3-o);
+  background-color: var(--color-2-o);
 }
 #story *{
   z-index: 1;
@@ -796,10 +810,10 @@ right: 3px;
 .temoin img{
     width: 25vw;
     border-radius: 50%;
-    border: 5px solid var(--harvest-1);
+    border: 5px solid var(--color-6);
 }
 .temoin:nth-child(2n+1) img{
-  border: 5px solid var(--harvest-2);
+  border: 5px solid var(--color-4);
 }
 .temoin .card{
     height: 100%;
@@ -848,6 +862,10 @@ right: 3px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background-image: url(/img/foret.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #partenaires img{
@@ -886,7 +904,7 @@ right: 3px;
   width: 100vw;
   overflow:hidden;
   height: 17vw;
-  color: var(--harvest-4);
+  color: var(--color-1);
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -898,7 +916,7 @@ right: 3px;
     height: 39vw;
   }
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:767px) {
   #small-soiree{
     display: block;
   }
@@ -915,18 +933,105 @@ right: 3px;
 
 #info-gps, #eglise, #salle{
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--color-2-o);
+  max-height: 100vh;
+  z-index: 1000;
 }
 #info-gps.active, #salle.active, #eglise.active{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   min-width: 100vw;
   padding: 5rem;
 }
 #info-gps > div, #eglise > div, #salle > div{
-  background-color: #8E7C68;
+  background-color: var(--color-1);
+  border: 2px solid var(--color-6);
+  position: relative;
+  padding: 3rem;
+  border-radius: 25px;
 }
-
+#eglise img, #salle img{
+  max-height: 70vh;
+  max-width: 70vw;
+}
+#info-gps > div{
+  padding: 6rem;
+}
+#info-gps a{
+  width: 80%;
+}
 .photo-timeline{
   max-width: 250px;
   max-height: 150px;
+}
+@media screen and (max-width:767px) {
+  #info-gps.active, #salle.active, #eglise.active{
+    padding: 0.5rem;
+  }
+  #info-gps > div{
+    padding: 4rem 2rem;
+  }
+}
+/* CSS */
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: var(--color-6);
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,var(--harvest-3) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: var(--color-1);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 5px 15px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button-30:focus {
+  box-shadow: var(--color-1) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--color-1) 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--color-1) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: var(--color-1) 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+body.modal{
+  overflow-y: hidden;
 }

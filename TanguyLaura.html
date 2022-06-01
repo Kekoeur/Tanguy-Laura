@@ -12,7 +12,7 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     
 </head>
-<body>
+<body id="body">
   <section id="acceuil">
     <div>
       <!--<h1>L & T</h1>
@@ -93,6 +93,7 @@
           <li>
             <div>
               <time datetime="1998-09-10">10 Septembre 1998</time> Naissance de Laura
+              <img class="photo-timeline" src="/img/Laura-bebe.png" alt="">
             </div>
           </li>
           <li>
@@ -268,13 +269,15 @@
       <div>
         <h5>Direction</h5>
         <p>Le moyen le plus simple d’entrer dans le parking est de prendre la D213 et ensuite prendre la rue du Tourniquet. Un portail à votre droite sera ouvert sur le parking en herbe.</p>
-        <button id="display-eglise">Plan Église</button>
-        <button id="display-salle">Plan Salle</button>
-        <button id="display-gps">GPS</button>
+        <br>
+        <button class="button-30" id="display-eglise">Plan Église</button>
+        <button class="button-30" id="display-gps">GPS</button>
+        <button class="button-30" id="display-salle">Plan Salle</button>
+        
       </div>
       <div id="eglise">
         <div>
-          <button id="close-eglise">X</button>
+          <button class="button-30 close" id="close-eglise">X</button>
           <h3>Plan</h3>
           <h4>Église Saint-Germain - Daon</h4>
           <img src="/img/maps.png" alt="">
@@ -282,24 +285,24 @@
       </div>
       <div id="salle">
         <div>
-          <button id="close-salle">X</button>
+          <button class="button-30 close" id="close-salle">X</button>
           <h4>Espace Jacques Brel - Saint-Fort</h4>
           <img src="/img/trajet.png" alt="">
         </div>
       </div>  
       <div id="info-gps" >
         <div>
-          <button id="close-gps">X</button>
+          <button class="button-30 close" id="close-gps">X</button>
           <h3>Google Maps</h3>
-          <a href="https://goo.gl/maps/CtPd81mTM4NRH5kM7" target="_blank" rel="noopener noreferrer">Église</a>
+          <a class="button-30" href="https://goo.gl/maps/CtPd81mTM4NRH5kM7" target="_blank" rel="noopener noreferrer">Église</a>
           <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.6448346814345!2d-0.640887484142234!3d47.749545479194495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4808606c556f8d0b%3A0xb49db3c1f055d0b6!2s%C3%89glise%20Saint-Germain!5e0!3m2!1sen!2sfr!4v1654029406222!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
-          <a href="https://goo.gl/maps/w2bfSLZUfD9hWK9U8" target="_blank" rel="noopener noreferrer">Salle</a>
+          <a class="button-30" href="https://goo.gl/maps/w2bfSLZUfD9hWK9U8" target="_blank" rel="noopener noreferrer">Salle</a>
           <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10721.36047274673!2d-0.7248267!3d47.7942423!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x86e973aba4c231ce!2sEspace%20Jacques%20Brel!5e0!3m2!1sen!2sfr!4v1654029345860!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
-          
+          <br>
           <h3>Waze</h3>
-          <a href="https://ul.waze.com/ul?preview_venue_id=235536861.-1939860825.6914282&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank" rel="noopener noreferrer">Église</a>
+          <a class="button-30" href="https://ul.waze.com/ul?preview_venue_id=235536861.-1939860825.6914282&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank" rel="noopener noreferrer">Église</a>
           <!--<iframe src="https://embed.waze.com/iframe?zoom=16&lat=47.749493&lon=-0.638668&ct=livemap" width="600" height="450" allowfullscreen></iframe>-->
-          <a href="https://ul.waze.com/ul?preview_venue_id=235471326.-1940385109.9857651&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank" rel="noopener noreferrer">Salle</a>
+          <a class="button-30" href="https://ul.waze.com/ul?preview_venue_id=235471326.-1940385109.9857651&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank" rel="noopener noreferrer">Salle</a>
           <!--<iframe src="https://embed.waze.com/iframe?zoom=16&lat=47.794590&lon=-0.723573&ct=livemap" width="600" height="450" allowfullscreen></iframe>-->
         </div>
       </div>
