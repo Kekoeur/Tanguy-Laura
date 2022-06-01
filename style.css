@@ -1081,3 +1081,9 @@ right: 3px;
 body.modal{
   overflow-y: hidden;
 }
+
+#rose{
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
