@@ -270,7 +270,7 @@ body {
 }
 
 .timeline ol li:last-child {
-  width: 280px;
+  width: 443px;
 }
 
 .timeline ol li:not(:first-child) {
@@ -920,6 +920,10 @@ right: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#partenaires .button-30{
+  height: auto;
+  padding: 5px;
 }
 @media screen and (max-width:767px) {
   #partenaires > div{
