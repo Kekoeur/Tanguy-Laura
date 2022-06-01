@@ -911,7 +911,15 @@ right: 3px;
   background-color: var(--color-1-o);
   width: fit-content;
   padding: 3rem;
+  margin: 1rem;
   border-radius: 25px;
+}
+#partenaires .img{
+  height: 200px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width:767px) {
   #partenaires > div{
