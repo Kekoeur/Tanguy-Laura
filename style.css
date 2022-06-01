@@ -519,7 +519,7 @@ section{
 
 #acceuil > div{
     height: calc(100vh - 48px);
-    background: url(/img/acceuil-m.png);
+    background: url(/img/acceuil-m.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -782,7 +782,7 @@ right: 3px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(/img/ble.jpg);
+    background: url(/img/ble.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -863,7 +863,7 @@ right: 3px;
 /* Galerie */
 
 #gallery{
-    background-image: url(/img/t&L.jpg);
+    background-image: url(/img/t&L.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -901,7 +901,7 @@ right: 3px;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url(/img/foret.png);
+    background-image: url(/img/foret.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -959,7 +959,7 @@ right: 3px;
 }
 #small-soiree{
   display: none;
-  background-image: url(/img/small-party2.png);
+  background-image: url(/img/small-party2.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -968,7 +968,7 @@ right: 3px;
   height: 39vw;
 }
 #soiree{
-  background-image: url(/img/party.png);
+  background-image: url(/img/party.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -983,7 +983,7 @@ right: 3px;
 }
 @media screen and (max-width:1000px) {
   #soiree{
-    background-image: url(/img/small-party.png);
+    background-image: url(/img/small-party.webp);
     height: 39vw;
   }
 }
