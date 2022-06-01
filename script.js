@@ -35,9 +35,14 @@ document.getElementById('display-salle').addEventListener('click', function (e) 
   document.getElementById('salle').classList.toggle("active");
   document.getElementById('body').classList.toggle("modal");
 })
-document.getElementById('display-gps').addEventListener('click', function (e) {
+document.getElementById('display-gps-eglise').addEventListener('click', function (e) {
   e.preventDefault();
-  document.getElementById('info-gps').classList.toggle("active");
+  document.getElementById('info-gps-eglise').classList.toggle("active");
+  document.getElementById('body').classList.toggle("modal");
+})
+document.getElementById('display-gps-salle').addEventListener('click', function (e) {
+  e.preventDefault();
+  document.getElementById('info-gps-salle').classList.toggle("active");
   document.getElementById('body').classList.toggle("modal");
 })
 document.getElementById('close-eglise').addEventListener('click', function (e) {
@@ -50,8 +55,13 @@ document.getElementById('close-salle').addEventListener('click', function (e) {
   document.getElementById('salle').classList.remove("active");
   document.getElementById('body').classList.remove("modal");
 })
-document.getElementById('close-gps').addEventListener('click', function (e) {
+document.getElementById('close-gps-eglise').addEventListener('click', function (e) {
   e.preventDefault();
-  document.getElementById('info-gps').classList.remove("active");
+  document.getElementById('info-gps-eglise').classList.remove("active");
+  document.getElementById('body').classList.remove("modal");
+})
+document.getElementById('close-gps-salle').addEventListener('click', function (e) {
+  e.preventDefault();
+  document.getElementById('info-gps-salle').classList.remove("active");
   document.getElementById('body').classList.remove("modal");
 })

@@ -977,7 +977,7 @@ right: 3px;
   height: 100px;
 }
 
-#info-gps, #eglise, #salle{
+#info-gps-eglise, #info-gps-salle, #eglise, #salle{
   display: none;
   position: fixed;
   top: 0;
@@ -986,7 +986,7 @@ right: 3px;
   max-height: 100vh;
   z-index: 1000;
 }
-#info-gps.active, #salle.active, #eglise.active{
+#info-gps-eglise.active, #info-gps-salle.active, #salle.active, #eglise.active{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -994,7 +994,7 @@ right: 3px;
   min-width: 100vw;
   padding: 5rem;
 }
-#info-gps > div, #eglise > div, #salle > div{
+#info-gps-eglise > div, #info-gps-salle > div, #eglise > div, #salle > div{
   background-color: var(--color-1);
   border: 2px solid var(--color-6);
   position: relative;
@@ -1005,10 +1005,10 @@ right: 3px;
   max-height: 70vh;
   max-width: 70vw;
 }
-#info-gps > div{
+#info-gps-eglise > div, #info-gps-salle > div{
   padding: 6rem;
 }
-#info-gps a{
+#info-gps-eglise a, #info-gps-salle a{
   width: 80%;
 }
 .photo-timeline{
@@ -1016,10 +1016,10 @@ right: 3px;
   max-height: 125px;
 }
 @media screen and (max-width:767px) {
-  #info-gps.active, #salle.active, #eglise.active{
+  #info-gps-eglise.active, #info-gps-salle.active, #salle.active, #eglise.active{
     padding: 0.5rem;
   }
-  #info-gps > div{
+  #info-gps-eglise > div, #info-gps-salle > div{
     padding: 4rem 2rem;
   }
 }
