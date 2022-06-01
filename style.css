@@ -862,13 +862,22 @@ right: 3px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     background-image: url(/img/foret.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: top;
 }
-
+#partenaires > div{
+  background-color: var(--color-1-o);
+  width: fit-content;
+  padding: 5rem;
+  border-radius: 25px;
+}
+#partenaires > div > *{
+  padding-bottom: 2rem;
+}
 #partenaires img{
     max-width: 180px;
     max-height: 200px;
