@@ -820,8 +820,17 @@ right: 3px;
 .temoin .card{
     height: 100%;
     width: 40vw;
-    border: 1px solid black;
+    border: 3px solid var(--color-6);
+    border-radius: 25px;
     padding: 3%;
+    color: var(--color-6) !important;
+}
+.temoin:nth-child(2n+1) .card{
+  border-color: var(--color-4);
+  color: var(--color-4) !important;
+}
+.card p {
+  padding: 3px;
 }
 .bold{
     font-weight: bold;
