@@ -701,6 +701,15 @@ span.icon-bar {
   padding-bottom: 0;
   overflow-x: hidden;
 }
+#mariage > div{
+  max-width: 60vw;
+}
+@media screen and (max-width:767px) {
+  #mariage > div{
+    max-width: 100vw;
+  }
+  #ma
+}
 #french {
   padding: 30px;
   max-width: 50vw;
@@ -871,7 +880,7 @@ right: 3px;
 }
 
 @media screen and (max-width:767px) {
-    #intro{
+    #intro, #mariage{
       padding: 20px;
     }
     #french{
