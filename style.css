@@ -471,7 +471,7 @@ body {
 }
 
 .nav-left {
-  left: -25px;
+  left: -45px;
 }
 
 .nav-right {
@@ -915,7 +915,8 @@ right: 3px;
 }
 @media screen and (max-width:767px) {
   #partenaires > div{
-    padding: 2rem 0.5rem;
+    padding: 2rem 0;
+    margin: 0.5rem;
   }
 }
 #partenaires > div > p{
