@@ -47,10 +47,8 @@ function moveSlidesLeft() {
 window.addEventListener('resize', setScreenSize);
 
 function setScreenSize() {
-  if ( window.innerWidth >= 500 ) {
+  if ( window.innerWidth >= 800 ) {
     carouselDisplaying = 2;
-  } else if ( window.innerWidth >= 300 ) {
-    carouselDisplaying = 1;
   } else {
     carouselDisplaying = 1;
   }
