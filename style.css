@@ -883,6 +883,9 @@ right: 3px;
     #intro, #mariage{
       padding: 20px;
     }
+    #mariage{
+      padding-bottom: 0;
+    }
     #french{
       max-width: 95vw;
     }
