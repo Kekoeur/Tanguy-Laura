@@ -591,11 +591,12 @@ nav ul li{
   padding: 16px 0;
   width: calc(100vw / 7);
   height: min-content;
-  background-color: #fff;
+  background-color: #ffffe6;
+  color: var(--color-6) !important;
 }
 nav ul li:hover{
-    background-color: #000;
-    color: #fff !important;
+    background-color: var(--color-6);
+    color: #ffffe6 !important;
 }
 nav a {
     text-decoration: none;
@@ -654,7 +655,8 @@ span.icon-bar {
     #nav-toggle {
         display: block !important;
         z-index: 11;
-        background-color: #fff;
+        background-color: #ffffe6;
+        color: var(--color-6);
     }
     #acceuil > div{
         height: 100vh;
@@ -674,7 +676,7 @@ span.icon-bar {
         right: 0;
         padding-top: 50px;
         width: 100%;
-        background-color: #fff;
+        background-color: #ffffe6;
     }
     ul li{
         width: 100% !important;
