@@ -825,6 +825,11 @@ right: 3px;
     font-weight: bold;
 }
 
+@media screen and (max-width:767px) {
+  .temoin, .temoin:nth-child(2n+1){
+    flex-direction: column;
+  }
+}
 /* Galerie */
 
 #gallery{
