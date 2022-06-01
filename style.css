@@ -1,16 +1,16 @@
 :root {
-  --color-1: #F6E7D5;
-  --color-1-o: #F6E7D550;
-  --color-2: #B1A285;
-  --color-2-o: #B1A28550;
-  --color-3: #6C755F;
-  --color-3-o: #6C755F50;
-  --color-4: #4C533E;
-  --color-4-o: #4C533E50;
-  --color-5: #C2835E;
-  --color-5-o: #C2835E50;
-  --color-6: #733F22;
-  --color-6-o: #733F2250;
+  --color-1: #ffe8d2;
+  --color-1-o: #ffe8d250;
+  --color-2: #bea282;
+  --color-2-o: #bea28250;
+  --color-3: #65775b;
+  --color-3-o: #65775b50;
+  --color-4: #455339;
+  --color-4-o: #45533950;
+  --color-5: #e48153;
+  --color-5-o: #e4815350;
+  --color-6: #8e3910;
+  --color-6-o: #8e391050;
 
 
   --harvest-1 : #8E7C68;
@@ -866,6 +866,7 @@ right: 3px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: top;
 }
 
 #partenaires img{
