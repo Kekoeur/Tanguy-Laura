@@ -14,7 +14,6 @@
     window.addEventListener("load", init);
   
     function init() {
-      console.log(timeline);
       setEqualHeights(elH);
       animateTl(xScrolling, arrows, timeline);
       setSwipeFn(timeline, arrowPrev, arrowNext);

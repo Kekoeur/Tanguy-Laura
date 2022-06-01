@@ -875,6 +875,11 @@ right: 3px;
   padding: 5rem;
   border-radius: 25px;
 }
+@media screen and (max-width:767px) {
+  #partenaires > div{
+    padding: 2rem 0.5rem;
+  }
+}
 #partenaires > div > *{
   padding-bottom: 2rem;
 }
