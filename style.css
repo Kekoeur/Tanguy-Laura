@@ -3,8 +3,8 @@
   --harvest-2 : #ED7458;
   --harvest-3 : #FFDC9F;
   --harvest-4 : #DDC9BC;
-  --harvest-5: #58ed74;
-  --harvest-5-o: #58ed7450;
+  --harvest-5: #2e7d3b;
+  --harvest-5-o: #2e7d3b50;
   --harvest-2-o : #ed735850;
   --harvest-3-o : #ffdc9f50;
 }
@@ -913,18 +913,19 @@ right: 3px;
   height: 100px;
 }
 
-#info-gps{
+#info-gps, #eglise, #salle{
   display: none;
 }
-#info-gps.active{
+#info-gps.active, #salle.active, #eglise.active{
   display: block;
   min-height: 100vh;
   min-width: 100vw;
   padding: 5rem;
 }
-#info-gps > div{
+#info-gps > div, #eglise > div, #salle > div{
   background-color: #8E7C68;
 }
+
 .photo-timeline{
   max-width: 250px;
   max-height: 150px;
