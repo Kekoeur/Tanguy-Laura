@@ -930,6 +930,12 @@ right: 3px;
     padding: 2rem 0;
     margin: 0.5rem;
   }
+  #partenaires .desc h4{
+    font-size: 2.5rem;
+  }
+  #partenaires .desc p{
+    font-size: 18px;
+  }
 }
 #partenaires > div > p{
   text-align: center;
