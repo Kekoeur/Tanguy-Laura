@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanguy et Laura</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="timeline.js"></script>
-    <script defer src="carousel-p.js"></script>
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+    <script defer src="/js/timeline.js"></script>
+    <script defer src="/js/carousel-p.js"></script>
+    <script defer src="/js/script.js"></script>
+    <script defer src="/js/dragDrop.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     
 </head>
@@ -107,7 +109,7 @@
           <li>
             <div>
               <time datetime="2015-01-19">19 Janvier 2015</time> Le coup de foudre
-              <img class="photo-timeline" src="/img/t&l4.webp" alt="">
+              <img class="photo-timeline" src="/img/t&l6.webp" alt="">
             </div>
           </li>
           <li>
@@ -118,7 +120,7 @@
           </li>
           <li>
             <div>
-              <time datetime="2018">2018</time> Aménagement enfin seul à Entrammes<span>Salut la coloc !</span>
+              <time datetime="2018">2018</time> Aménagement enfin seul à Entrammes<span>Salut la coloc !</span> Pas commun le logement à la fromagerie.
               <img class="photo-timeline" src="/img/entrammes.webp" alt="">
             </div>
           </li>
@@ -192,7 +194,7 @@
           <p><span class="bold">Signes particuliers :</span> Ami du Marié depuis le Bac et ancien colocataire</p>
           <p><span class="bold">Profession :</span> Salarié Agricole</p>
           <p><span class="bold">Anecdote de la photo :</span> Un vrai ministre ! Toujours au téléphone...</p>
-          <p><span class="bold">Numéro de téléphone :</span> 06 78 61 3* **, et peut être encore plus maintenant</p>
+          <p><span class="bold">Numéro de téléphone :</span> 06 78 61 3* **</p>
         </div>
       </div>
     </div>
@@ -220,7 +222,7 @@
           <p><span class="bold">Nom :</span> DE PRAETER</p>
           <p><span class="bold">Âge :</span> 23ans</p>
           <p><span class="bold">Signes particuliers :</span> Immigrée Belge !</p>
-          <p><span class="bold">Profession :</span> Salarié Agricole</p>
+          <p><span class="bold">Profession :</span> Salariée Agricole</p>
           <p><span class="bold">Passion :</span> Pompier volontaire</p>
         </div>
       </div>
@@ -238,6 +240,7 @@
           <p><span class="bold">Surnom :</span> Kekoeur</p>
           <p><span class="bold">Âge :</span> 24ans</p>
           <p><span class="bold">Signes particuliers :</span> Frère du Marié, on me prend toujours pour l'aîné mais en réalité non !</p>
+          <p>Mais aussi Développeur de ce site ! Pour toute erreur voir avec mon Assistante</p>
           <p><span class="bold">Profession :</span> Développeur Fullstack</p>
           <p><span class="bold">Passion :</span> Faire chier son frère et sa soeur</p>
         </div>
@@ -247,10 +250,13 @@
   <section id="gallery">
     <div>
       <h3>Galerie Photo</h3>
-      <p>Ajouter vos photos et vos vidéos pour les partager avec tous le monde !<button class="button-30" >+</button></p>
+      <p>Ajouter vos photos et vos vidéos pour les partager avec tous le monde !<button class="button-30" id="display_modal">+</button></p>
       <p>Retrouver toutes les photos et videos de ce grand jour <a class="button-30" href="/gallery.php">ici</a></p>
     </div>
-    <div id="modal">
+  </section>
+  <div id="modal" class="modal">
+    <div>
+      <button class="button-30 close" id="close-modal">X</button>
       <h3>Ajouter une photo/vidéo</h3>
       <select name="type" id="type">
         <option value="img">Image</option>
@@ -265,8 +271,16 @@
         <option value="dimanche">Dimanche 19/06</option>
         <option value="other">Autre</option>
       </select>
+      <div class="box__input">
+        <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
+        <label for="file"><strong>Choose a file</strong><span class="box__dragndrop"> or drag it here</span>.</label>
+        <button class="box__button" type="submit">Upload</button>
+      </div>
+      <div class="box__uploading">Uploading…</div>
+      <div class="box__success">Done!</div>
+      <div class="box__error">Error! <span></span>.</div>
     </div>
-  </section>
+  </div>
   <section id="mariage">
     <div>
       <h4>Céremonie</h4>
@@ -281,7 +295,7 @@
         <button class="button-30" id="display-eglise">Plan Église</button>
         <button class="button-30" id="display-gps-eglise">GPS</button>
       </div>
-      <div id="eglise">
+      <div id="eglise" class="modal">
         <div>
           <button class="button-30 close" id="close-eglise">X</button>
           <h3>Plan</h3>
@@ -289,14 +303,14 @@
           <img src="/img/maps.webp" alt="">
         </div>
       </div>
-      <div id="salle">
+      <div id="salle" class="modal">
         <div>
           <button class="button-30 close" id="close-salle">X</button>
           <h4>Espace Jacques Brel - Saint-Fort</h4>
           <img src="/img/trajet.webp" alt="">
         </div>
       </div>  
-      <div id="info-gps-eglise" >
+      <div id="info-gps-eglise" class="modal">
         <div>
           <button class="button-30 close" id="close-gps-eglise">X</button>
           <h3>Google Maps</h3>
@@ -308,7 +322,7 @@
           <!--<iframe src="https://embed.waze.com/iframe?zoom=16&lat=47.749493&lon=-0.638668&ct=livemap" width="600" height="450" allowfullscreen></iframe>-->
         </div>
       </div>
-      <div id="info-gps-salle" >
+      <div id="info-gps-salle" class="modal">
         <div>
           <button class="button-30 close" id="close-gps-salle">X</button>
           <h3>Google Maps</h3>
@@ -356,7 +370,7 @@
       <h4>Détente</h4>
       <img class="logo" src="/img/petanque.webp" alt="">
       <p>La peau du ventre bien tendue nous pouvons nous dégourdir les jambes, c’est le moment de détente de la journée.</p>
-      <p>Pensez à prendre vos jeux de boules, palets, moulky …</p>
+      <p>Pensez à prendre vos jeux de Boules, Palets, Mölkky …</p>
     </div>
     <div class="divider">
       <img src="/img/divider.webp" alt="divider">
@@ -391,7 +405,7 @@
                 <div class="desc">
                   <h4>Habillage</h4>
                   <p>EMC Mariage</p>
-                  <p>Chemillé</p>
+                  <p><a class="button-30" href="https://www.espace-mariages.fr/" target="_blank" rel="noopener noreferrer">Site internet</a></p>
                 </div>
               </div>
               <div class="slide slide-2">
