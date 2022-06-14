@@ -114,5 +114,7 @@ let Allfiles;
 	Allfiles.forEach(uploadFile)
 	Allfiles = "";
 	document.getElementById('close-modal').click();
+	initializeProgress(0);
+	
 })
   
