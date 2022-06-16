@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
             document.getElementById('img').innerHTML =  xhr.response;
         }
     }
-    xhr.open('POST', '../php/display_files.php', true);
+    xhr.open('GET', '../php/display_files.php', true);
     xhr.send('');
 });
