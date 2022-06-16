@@ -5,7 +5,8 @@ echo 'POST';
 var_dump($_POST);
 $target_dir = "../gallery/";
 $target_file = $target_dir . basename($_FILES["file"]["name"]);
-$uploadOk = 1;
+move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
+/*$uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
@@ -49,5 +50,5 @@ if ($uploadOk == 0) {
     echo "Sorry, there was an error uploading your file.";
   }
 }
-}
+}*/
 ?>

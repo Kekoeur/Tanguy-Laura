@@ -260,7 +260,7 @@
       <h3>Ajouter une photo/vidéo</h3>
       <div id="drop-area">
         <form class="my-form">
-          <input type="file" name="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+          <input type="file" name="file" id="fileElem" multiple onchange="handleFiles(this.files)">
           <label class="button" for="fileElem">Select some files</label>
           <div id="preview"></div>
           <progress id="progress-bar" max=100 value=0 style="display: none;"></progress>
