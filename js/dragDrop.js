@@ -113,8 +113,13 @@ let Allfiles;
 	console.log(Allfiles);  
 	Allfiles.forEach(uploadFile)
 	Allfiles = "";
+	removeAllChildNodes(document.getElementById('preview'));
 	document.getElementById('close-modal').click();
-	initializeProgress(0);
 	
 })
   
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
