@@ -7,5 +7,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     }
     xhr.open('GET', '../php/display_files.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencode');
+
     xhr.send('');
 });
