@@ -6,7 +6,7 @@ var_dump($_FILES);
 $target_dir = "../gallery/";
 echo $target_dir;
 $target_file = $target_dir . basename($_FILES["file"]["name"]);
-
+echo $target_file;
 
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
