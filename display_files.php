@@ -7,11 +7,11 @@ $html = "";
 foreach( $files as $file ):
     $fileinfo = pathinfo($file);
     switch ($fileinfo['extension']) {
-        case 'jpg': case 'jpeg': case 'png': case 'gif': case 'webp': case 'svg':
+        case 'jpg': case 'jpeg': case 'png': case 'gif': case 'webp': case 'svggit ':
             $html .="
             <div class='gallery-img'>
             <a target='_blank' href='".$file."'>
-                <img src='".$file."' width='600' height='400'>
+                <img src='".$file."' >
             </a>
             </div>";
             break;
@@ -21,7 +21,7 @@ foreach( $files as $file ):
                 <div class='gallery-video'>
                 <a target='_blank' href='".$file."'>
 
-                    <video width='320' height='240' controls>
+                    <video controls>
                         <source src='".$file."' type='video/".$fileinfo['extension']."'>
                     Your browser does not support the video tag.
                     </video>

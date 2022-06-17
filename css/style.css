@@ -1154,7 +1154,7 @@ p {
 div.gallery-img {
   margin: 5px;
   border: 1px solid #ccc;
-  width: 180px;
+  width: 60vw;
   height:fit-content;
 }
 
@@ -1170,7 +1170,7 @@ div.gallery-img img {
 div.gallery-video {
   margin: 5px;
   border: 1px solid #ccc;
-  width: 320px;
+  width: 60vw;
   height: fit-content;
 }
 
