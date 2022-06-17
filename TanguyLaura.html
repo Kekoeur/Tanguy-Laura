@@ -259,7 +259,7 @@
       <button class="button-30 close" id="close-modal">X</button>
       <h3>Ajouter une photo/vidéo</h3>
       <div id="drop-area">
-        <form class="my-form">
+        <form class="my-form" enctype="multipart/form-data">
           <input type="file" name="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
           <label class="button" for="fileElem">Select some files</label>
           <div id="preview"></div>
