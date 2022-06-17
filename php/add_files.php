@@ -3,7 +3,8 @@
 ini_set('display_errors', 1);
 echo 'FILES';
 var_dump($_FILES);
-$target_dir = "/gallery/";
+$target_dir = __DIR__."/gallery/";
+echo $target_dir;
 $target_file = $target_dir . basename($_FILES["file"]["name"]);
 
 
