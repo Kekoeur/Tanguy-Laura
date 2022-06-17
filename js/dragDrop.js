@@ -84,7 +84,7 @@ let Allfiles;
   }
 
   function uploadFile(file, i) { // <- Add `i` parameter
-	var url = './php/add_files.php'
+	var url = './add_files.php'
 	var xhr = new XMLHttpRequest()
 	var formData = new FormData()
 	formData.set('submit', submit)
