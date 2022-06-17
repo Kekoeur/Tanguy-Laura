@@ -6,6 +6,15 @@ var_dump($_POST);
 $target_dir = "../gallery/";
 $target_file = $target_dir . basename($_FILES["file"]["name"]);
 move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
+$servername = "51.77.245.158";
+$username = "Kekoeur";
+$password = "Christo#26";
+$dbname = "TanguyLaura";
+$pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+$sql = "INSERT INTO imageTL (name) VALUES (?)";
+$stmt= $pdo->prepare($sql);
+$stmt->execute([$_FILES['file']['name']]);
+
 /*$uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
