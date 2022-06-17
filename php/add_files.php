@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 echo 'FILES';
 var_dump($_FILES);
-$target_dir = "../gallery/";
+$target_dir = "gallery/";
 $target_file = $target_dir . basename($_FILES["file"]["name"]);
 move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
 $servername = "51.77.245.158";
