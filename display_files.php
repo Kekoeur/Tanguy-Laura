@@ -1,4 +1,5 @@
 <?php
+echo "ici";
 $dir = ".././gallery/*.*";
 //get the list of all files with .jpg extension in the directory and safe it in an array named $images
 $images = glob( $dir );
