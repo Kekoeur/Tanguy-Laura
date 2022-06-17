@@ -5,7 +5,6 @@ echo 'FILES';
 var_dump($_FILES);
 $target_dir = "gallery/";
 $target_file = $target_dir . basename($_FILES["file"]["name"]);
-$pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
 
 $uploadOk = 1;
