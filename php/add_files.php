@@ -1,6 +1,6 @@
 <?php
 $inipath = php_ini_loaded_file();
-
+echo php_info();
 if ($inipath) {
     echo 'Loaded php.ini: ' . $inipath;
 } else {
