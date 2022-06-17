@@ -88,7 +88,7 @@ let Allfiles;
 	var xhr = new XMLHttpRequest()
 	var formData = new FormData()
 	formData.set('submit', submit)
-	xhr.open('get', url, true)
+	xhr.open('POST', url, true)
   
 	// Add following event listener
 	xhr.upload.addEventListener("progress", function(e) {
