@@ -5,10 +5,6 @@ echo 'FILES';
 var_dump($_FILES);
 $target_dir = "gallery/";
 $target_file = $target_dir . basename($_FILES["file"]["name"]);
-$servername = "51.77.245.158";
-$username = "Kekoeur";
-$password = "Christo#26";
-$dbname = "TanguyLaura";
 $pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
 
@@ -46,9 +42,6 @@ if ($uploadOk == 0) {
 } else {
   if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["file"]["name"])). " has been uploaded.";
-    $sql = "INSERT INTO imageTL (name) VALUES (?)";
-    $stmt= $pdo->prepare($sql);
-    $stmt->execute([$_FILES['file']['name']]);
   } else {
     echo "Sorry, there was an error uploading your file.";
   }
