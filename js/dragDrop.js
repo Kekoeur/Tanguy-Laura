@@ -84,11 +84,11 @@ let Allfiles;
   }
 
   function uploadFile(file, i) { // <- Add `i` parameter
-	var url = './add_files.php'
+	var url = './php/add_files.php'
 	var xhr = new XMLHttpRequest()
 	var formData = new FormData()
 	formData.set('submit', submit)
-	xhr.open('POST', url, true)
+	xhr.open('get', url, true)
   
 	// Add following event listener
 	xhr.upload.addEventListener("progress", function(e) {

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             document.getElementById('img').innerHTML =  xhr.response;
         }
     }
-    xhr.open('POST', '/display_files.php', true);
+    xhr.open('GET', '/display_files.php', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencode');
 
     xhr.send('');
