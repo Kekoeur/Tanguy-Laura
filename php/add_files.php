@@ -1,11 +1,4 @@
 <?php
-$inipath = php_ini_loaded_file();
-echo phpinfo();
-if ($inipath) {
-    echo 'Loaded php.ini: ' . $inipath;
-} else {
-   echo 'A php.ini file is not loaded';
-}
 ini_set('display_errors', 1);
 echo 'FILES';
 var_dump($_FILES);
@@ -18,7 +11,7 @@ $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
-  $check = getimagesize($_FILES["file"]["tmp_name"]);
+  /*$check = getimagesize($_FILES["file"]["tmp_name"]);
   if($check !== false) {
     echo "File is an image - " . $check["mime"] . ".";
     $uploadOk = 1;
@@ -26,7 +19,7 @@ if(isset($_POST["submit"])) {
     echo "File is not an image.";
     $uploadOk = 0;
   }
-
+*/
 // Check if file already exists
 if (file_exists($target_file)) {
   echo "Sorry, file already exists.";

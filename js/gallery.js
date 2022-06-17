@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if (xhr.readyState === 4) {
             console.log(xhr.response);
             document.getElementById('img').innerHTML =  xhr.response;
+            document.getElementById('img').resize();
         }
     }
     xhr.open('POST', '/display_files.php', true);
