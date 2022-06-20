@@ -16,7 +16,7 @@ foreach( $files as $file ):
             </div>";
             break;
         
-            case 'webm' : case 'mp4' : case 'm4v' : case 'mov' : case 'qt' : case 'avi' : case 'flv' : case 'wmv' : case 'asf' : case 'mpeg' : case 'mpg' : case 'vob' : case 'mkv' : case 'asf' : case 'wmv' : case 'rm' : case 'rmvb' : case 'vob' : case 'ts' : case 'dat' :
+            case 'webm' : case 'mp4' : case 'm4v' : case 'mov' : case 'qt' : case 'avi' : case 'flv' : case 'wmv' : case 'asf' : case 'mpeg' : case 'mpg' : case 'vob' : case 'mkv' : case 'asf' : case 'wmv' : case 'rm' : case 'rmvb' : case 'vob' : case 'ts' : case 'dat' : case 'MOV' :
                 $html .="
                 <div class='gallery-video'>
                 <a target='_blank' href='".$file."'>
