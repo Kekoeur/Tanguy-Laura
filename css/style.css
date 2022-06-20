@@ -1206,13 +1206,20 @@ div.desc {
 
 @media screen and (max-width:767px) {
 
-#gallery2{
-  align-items: center;
-}
+  #gallery2{
+    align-items: center;
+  }
+  #drop-area{
+    margin: 0;
+  }
+  .modal.active{
+    padding: 0;
+  }
 }
 
 .bottom{
   font-size: 0.8rem;
   text-align: center;
 }
+
 
