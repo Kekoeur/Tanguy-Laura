@@ -353,6 +353,7 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .timeline .arrows .arrow__prev {
@@ -788,6 +789,9 @@ right: 3px;
     background-position: center;
     padding: 20px;
 }
+#story h3{
+  margin-bottom: 20px;
+}
 #story:after{
   position: absolute;
   content: " ";
@@ -799,6 +803,12 @@ right: 3px;
 }
 #story *{
   z-index: 1;
+}
+#story2{
+  background-color: var(--color-1);
+  padding: 25px;
+  border-radius: 5px;
+  text-align: center;
 }
 /* T�moin */
 
@@ -1188,7 +1198,7 @@ div.desc {
   text-align: center;
 }
 
-#gallery2{
+#gallery2, #diapo{
   background-image: url(./../img/t&l8.webp);
   background-attachment: fixed;
   background-size: cover;
@@ -1198,15 +1208,26 @@ div.desc {
   min-height: 90vh;
 }
 
-#gallery2 div{
+#gallery2 div, #diapo div{
   width: fit-content;
   padding: 5%;
   background-color: #fff;
 }
 
+#vid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-1);
+}
+#vid video{
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
 @media screen and (max-width:767px) {
 
-  #gallery2{
+  #gallery2, #diapo{
     align-items: center;
   }
   #drop-area{
