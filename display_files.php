@@ -1,5 +1,4 @@
 <?php
-echo phpinfo();
 $dir = "gallery/*.*";
 //get the list of all files with .jpg extension in the directory and safe it in an array named $images
 $files = glob( $dir );
